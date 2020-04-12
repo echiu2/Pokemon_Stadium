@@ -1,7 +1,14 @@
 import time
 import random
+import requests
+import json
+import sys
 
-#Create pokemon class with attributes
+sys.path.insert(0, '/Users/echiu2/Desktop/Pokemon_Stadium/Model')
+
+import get_pokemon
+
+# Create pokemon class with attributes
 class Pokemon:
     def __init__ (self, name, level, types, health, moves, stats):
         #Values are being saved as attributes
